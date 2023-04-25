@@ -20,7 +20,7 @@ describe('calculator', () => {
     }]);
   });
 
-    test('ooutputs booking details after calculate', () => {
+    test('outputs booking details after calculate', () => {
       const input = [{
         "id": 1,
         "from": "2017-10-23T08:00:00+11:00",

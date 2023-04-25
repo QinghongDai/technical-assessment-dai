@@ -2,6 +2,7 @@
 // Currently it just outputs the same input
 import isValidDate from './isValidDate';
 import calculateTotalRates from './calculateTotalRates';
+import createJsonFile from './createJsonFile';
 
 const calculator = (input) => {
     var output = [];
@@ -20,6 +21,10 @@ const calculator = (input) => {
 
         output.push(v);
     });
+
+    //Your application should create a file called output.json containing the array of booking objects with total and isValid properties added.
+    createJsonFile(output);
+
     return output;
 }
 
